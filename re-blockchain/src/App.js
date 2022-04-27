@@ -6,6 +6,8 @@ import './App.css'
 import Main from './Main';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import Marketplace from './Pages/Marketplace';
+import Signup from './Pages/Profile/Signup';
 class App extends Component {
   render() {
     return (
@@ -14,10 +16,12 @@ class App extends Component {
           <div className="content-wrap">
             <Header />
             <Route exact path ="/" component={Main} />
+            <Route exact path ="/marketplace" component={Marketplace} />
+            <Route exact path ="/signup" component={Signup} />
           </div>
         <Footer />
         </div>
-    </BrowserRouter>
+      </BrowserRouter>
     );
   }
 }
